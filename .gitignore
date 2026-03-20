@@ -1,0 +1,9 @@
+# Ignore python bytecode
+__pycache__/
+*.pyc
+ASI-venv-3.11/
+ASI-venv/
+# Ignore OpenEvolve temporary candidate files
+# (Check your local folder to see what naming convention it uses, usually 'candidate_*.py')
+candidate*.py
+temp_*.py

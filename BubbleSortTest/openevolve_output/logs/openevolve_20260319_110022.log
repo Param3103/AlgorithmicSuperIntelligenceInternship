@@ -1,0 +1,50 @@
+2026-03-19 11:00:22,674 - openevolve.controller - INFO - Logging to openevolve_output\logs\openevolve_20260319_110022.log
+2026-03-19 11:00:22,681 - openevolve.controller - INFO - Set random seed to 42 for reproducibility
+2026-03-19 11:00:22,887 - openevolve.llm.openai - INFO - Initialized OpenAI LLM with model: openrouter/free
+2026-03-19 11:00:22,887 - openevolve.llm.ensemble - INFO - Initialized LLM ensemble with models: openrouter/free (weight: 1.00)
+2026-03-19 11:00:22,889 - openevolve.prompt.sampler - INFO - Initialized prompt sampler
+2026-03-19 11:00:22,890 - openevolve.prompt.sampler - INFO - Set custom templates: system=evaluator_system_message, user=None
+2026-03-19 11:00:22,890 - openevolve.database - INFO - Initialized program database with 0 programs
+2026-03-19 11:00:22,892 - openevolve.evaluator - INFO - Successfully loaded evaluation function from C:\Users\param\AppData\Local\Temp\evaluator_ddf36005.py
+2026-03-19 11:00:22,892 - openevolve.evaluator - INFO - Initialized evaluator with C:\Users\param\AppData\Local\Temp\evaluator_ddf36005.py
+2026-03-19 11:00:22,892 - openevolve.controller - INFO - Initialized OpenEvolve with C:\Users\param\AppData\Local\Temp\program_3795711b.py
+2026-03-19 11:00:22,892 - openevolve.controller - INFO - Adding initial program to database
+2026-03-19 11:00:22,951 - openevolve.evaluator - INFO - Evaluated program 733fb00b-6d48-41c8-8cb7-07d56c4cc7fa in 0.06s: combined_score=0.9860, correctness=1.0000, speed_score=0.9719, runtime=0.0561, tests_passed=12.0000, total_tests=12.0000
+2026-03-19 11:00:22,951 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'complexity': 2, 'speed_score': 2}
+2026-03-19 11:00:22,952 - openevolve.process_parallel - INFO - Initialized process parallel controller with 2 workers
+2026-03-19 11:00:22,952 - openevolve.process_parallel - INFO - Set max None tasks per child
+2026-03-19 11:00:22,953 - openevolve.process_parallel - INFO - Started process pool with 2 processes
+2026-03-19 11:00:22,953 - openevolve.controller - INFO - Using island-based evolution with 2 islands
+2026-03-19 11:00:22,953 - openevolve.database - INFO - Island Status:
+2026-03-19 11:00:22,953 - openevolve.database - INFO -  * Island 0: 1 programs, best=0.9860, avg=0.9860, diversity=0.00, gen=0 (best: 733fb00b-6d48-41c8-8cb7-07d56c4cc7fa)
+2026-03-19 11:00:22,953 - openevolve.database - INFO -    Island 1: 0 programs, best=0.0000, avg=0.0000, diversity=0.00, gen=0
+2026-03-19 11:00:22,953 - openevolve.process_parallel - INFO - Starting process-based evolution from iteration 1 for 10 iterations (total: 11)
+2026-03-19 11:00:23,020 - openevolve.process_parallel - INFO - Early stopping disabled
+2026-03-19 11:00:31,930 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'complexity': 2, 'speed_score': 4}
+2026-03-19 11:00:31,934 - openevolve.process_parallel - INFO - Iteration 2: Program 7dc5694f-d77f-454d-81a6-78835727741e (parent: 733fb00b-6d48-41c8-8cb7-07d56c4cc7fa) completed in 7.81s
+2026-03-19 11:00:31,934 - openevolve.process_parallel - INFO - Metrics: combined_score=0.9863, correctness=1.0000, speed_score=0.9725, runtime=0.0550, tests_passed=12.0000, total_tests=12.0000
+2026-03-19 11:00:39,380 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'complexity': 4, 'speed_score': 4}
+2026-03-19 11:00:39,382 - openevolve.process_parallel - INFO - Iteration 1: Program 4df89a62-b001-42f5-b6e6-8ab2bfce6fbb (parent: 733fb00b-6d48-41c8-8cb7-07d56c4cc7fa) completed in 15.28s
+2026-03-19 11:00:39,382 - openevolve.process_parallel - INFO - Metrics: combined_score=0.9939, correctness=1.0000, speed_score=0.9878, runtime=0.0245, tests_passed=12.0000, total_tests=12.0000
+2026-03-19 11:00:40,595 - openevolve.database - INFO - New MAP-Elites cell occupied in island 1: {'complexity': 4, 'speed_score': 4}
+2026-03-19 11:00:40,597 - openevolve.process_parallel - INFO - Iteration 3: Program c895cfd8-eec8-47e1-978b-f96ae4977115 (parent: 733fb00b-6d48-41c8-8cb7-07d56c4cc7fa) completed in 8.66s
+2026-03-19 11:00:40,597 - openevolve.process_parallel - INFO - Metrics: combined_score=0.9939, correctness=1.0000, speed_score=0.9878, runtime=0.0244, tests_passed=12.0000, total_tests=12.0000
+2026-03-19 11:00:46,136 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'complexity': 0, 'speed_score': 0}
+2026-03-19 11:00:46,137 - openevolve.process_parallel - INFO - Iteration 5: Program 09e58a93-d943-4d81-a754-15c39d3ed85c (parent: 7dc5694f-d77f-454d-81a6-78835727741e) completed in 5.55s
+2026-03-19 11:00:46,137 - openevolve.process_parallel - INFO - Metrics: combined_score=0.9861, correctness=1.0000, speed_score=0.9723, runtime=0.0554, tests_passed=12.0000, total_tests=12.0000
+2026-03-19 11:01:22,218 - openevolve.process_parallel - WARNING - Iteration 4 error: No valid diffs found in response
+2026-03-19 11:01:26,894 - openevolve.process_parallel - WARNING - Iteration 6 error: LLM returned None response
+2026-03-19 11:01:30,079 - openevolve.database - INFO - Island 1 MAP-Elites cell improved: {'complexity': 4, 'speed_score': 4} (fitness: 0.994 -> 0.994)
+2026-03-19 11:01:30,082 - openevolve.process_parallel - INFO - Iteration 7: Program 5934706a-51e9-4c8e-a5fe-28669105ff7e (parent: c895cfd8-eec8-47e1-978b-f96ae4977115) completed in 7.86s
+2026-03-19 11:01:30,082 - openevolve.process_parallel - INFO - Metrics: combined_score=0.9940, correctness=1.0000, speed_score=0.9880, runtime=0.0240, tests_passed=12.0000, total_tests=12.0000
+2026-03-19 11:02:43,259 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'complexity': 0, 'speed_score': 4}
+2026-03-19 11:02:43,261 - openevolve.process_parallel - INFO - Iteration 8: Program c5e3301d-9134-4e19-ae81-dfe7f2db1268 (parent: 09e58a93-d943-4d81-a754-15c39d3ed85c) completed in 76.36s
+2026-03-19 11:02:43,261 - openevolve.process_parallel - INFO - Metrics: combined_score=0.9972, correctness=1.0000, speed_score=0.9945, runtime=0.0111, tests_passed=12.0000, total_tests=12.0000
+2026-03-19 11:02:46,204 - openevolve.database - INFO - Island 1 MAP-Elites cell improved: {'complexity': 4, 'speed_score': 4} (fitness: 0.994 -> 1.000)
+2026-03-19 11:02:46,206 - openevolve.process_parallel - INFO - Iteration 9: Program 65cee318-cc35-4c93-9c70-56d7d8bbd628 (parent: c895cfd8-eec8-47e1-978b-f96ae4977115) completed in 76.13s
+2026-03-19 11:02:46,206 - openevolve.process_parallel - INFO - Metrics: combined_score=0.9997, correctness=1.0000, speed_score=0.9994, runtime=0.0012, tests_passed=12.0000, total_tests=12.0000
+2026-03-19 11:02:58,008 - openevolve.process_parallel - WARNING - Iteration 10 error: No valid diffs found in response
+2026-03-19 11:02:58,238 - openevolve.process_parallel - INFO - Stopped process pool
+2026-03-19 11:02:58,238 - openevolve.controller - INFO - Using tracked best program: 65cee318-cc35-4c93-9c70-56d7d8bbd628
+2026-03-19 11:02:58,238 - openevolve.controller - INFO - Evolution complete. Best program has metrics: combined_score=0.9997, correctness=1.0000, speed_score=0.9994, runtime=0.0012, tests_passed=12.0000, total_tests=12.0000
+2026-03-19 11:02:58,240 - openevolve.controller - INFO - Saved best program to openevolve_output\best\best_program.py with program info to openevolve_output\best\best_program_info.json
