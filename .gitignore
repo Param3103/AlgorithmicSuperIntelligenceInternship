@@ -7,3 +7,5 @@ ASI-venv/
 # (Check your local folder to see what naming convention it uses, usually 'candidate_*.py')
 candidate*.py
 temp_*.py
+HuggingFaceCourse\Chap2-HuggingFaceTransformers\HuggingfaceTransformersModels\model.safetensors
+*.safetensors
