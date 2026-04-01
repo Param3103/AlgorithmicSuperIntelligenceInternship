@@ -9,3 +9,5 @@ candidate*.py
 temp_*.py
 HuggingFaceCourse\Chap2-HuggingFaceTransformers\HuggingfaceTransformersModels\model.safetensors
 *.safetensors
+*.dll
+ASI-venv-311/Lib/site-packages/torch/lib/torch_cpu.dll
